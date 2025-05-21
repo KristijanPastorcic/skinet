@@ -47,7 +47,7 @@ public class ProductRepositry(StoreContext _storeContext) : IProductRepository
             .ToListAsync();
     }
 
-    public void CreateProduct(Product product)
+    public void AddProduct(Product product)
     {
         _storeContext.Products.Add(product);
     }
